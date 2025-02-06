@@ -48,6 +48,13 @@ jobs:
       with:
         sarif_file: results.sarif
 
+  Test2:
+    name: Test2    
+    runs-on: ubuntu-latest
+    needs: Test1
+    steps:
+      - name: Test2
+        run: echo 'Test2'
   
   codeql:
     name: CodeQL
