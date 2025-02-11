@@ -8,6 +8,7 @@ var con = mysql.createConnection({
     user: "workshop",
     password: "123456",
     database: "workshop"
+ 
   });
   
   con.connect(function(err) {
